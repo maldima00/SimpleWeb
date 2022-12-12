@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        body {
+        background-color: #888;
+        /* 00 00 00
+        ff = 255
+        00 = 0
+        0 - 9 a b c d e f
+        red blue green */
+      }
+      .ele {
+        width: 100px;
+        height: 100px;
+      }
+
+      .ele--1 {
+        background-color: red;
+      }
+      .ele--2 {
+        background-color: green;
+      }
+      .ele--3 {
+        background-color: black;
+      }
+      .ele--4 {
+        background-color: indigo;
+      }
+      .ele--5 {
+        background-color: pink;
+      }
+
+      .wrapper {
+        background-color: blueviolet;
+        height: 800px;
+        width: 800px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        /* justify-content: space-evenly; */
+        /* justify-content: space-around; */
+        /* justify-content: space-between; */
+        gap: 60px;
+      }
+
+      /* DRY = do not repeat yourself */
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="ele ele--1">HTML</div>
+        <div class="ele ele--2">And</div>
+        <div class="ele ele--3">CSS</div>
+        <div class="ele ele--4">Are</div>
+        <div class="ele ele--5">Amazing</div>
+      </div>
+</body>
+</html>
